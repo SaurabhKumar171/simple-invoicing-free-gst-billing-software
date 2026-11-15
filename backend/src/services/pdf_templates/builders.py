@@ -16,6 +16,7 @@ def _e(text: str | None) -> str:
     """Escape HTML special characters."""
     return escape(text or "")
 
+
 def _fmt_inr(value: float, currency: str = "INR") -> str:
     try:
         if currency == "INR":
@@ -42,6 +43,7 @@ def _fmt_inr(value: float, currency: str = "INR") -> str:
         return f"{value:,.2f} {currency}"
     except Exception:
         return f"{value:,.2f}"
+    
     
 def _fmt_currency(value: float, currency_code: str | None = None) -> str:
     """Format a currency value with the appropriate symbol."""

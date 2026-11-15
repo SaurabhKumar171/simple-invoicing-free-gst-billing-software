@@ -55,3 +55,4 @@ def test_fmt_amt_inr_indian_grouping_and_negative_sign():
     assert _fmt_amt(-500, "INR") == "-₹500.00"
     assert _fmt_amt(1234567.5) == "₹12,34,567.50"
     assert _fmt_amt(1234567.5, "USD") == "$1,234,567.50"
+    
